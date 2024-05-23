@@ -22,6 +22,8 @@ import barChartIcon from "@ui5/webcomponents-icons/dist/horizontal-bar-chart.js"
 import listIcon from "@ui5/webcomponents-icons/dist/list.js";
 import tableViewIcon from "@ui5/webcomponents-icons/dist/table-view.js";
 import { useNavigate } from "react-router-dom";
+import { MyCustomElement } from "./MyCustomElement";
+
 
 const dataset = [
     {
@@ -117,6 +119,7 @@ export function Home() {
                 wrap={FlexBoxWrap.Wrap}
                 style={spacing.sapUiContentPadding}
             >
+                <MyCustomElement />
                 <Card
                     header={
                         <CardHeader
